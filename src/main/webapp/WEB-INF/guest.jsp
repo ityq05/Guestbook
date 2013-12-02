@@ -20,6 +20,10 @@
     	$( "#datepicker" ).datepicker();
   		});
   		</script>
+  		
+  		
+
+  		
     </head>
  
     <body>
@@ -64,17 +68,15 @@
   			<td><input type="checkbox" name="compul" value="yes"/></td>
 		</tr>
 		<tr>
-  			<td><input type="submit" value="Add" /></td>
-		</tr>
+  			<td><input type="submit" value="Add"/></td>
+  			
+ 		</tr>
 		</table>
         </form>
- 
-        <hr><ol> 
-        <% for (Guest guest : guestDao.getAllGuests()) { %>
-            <li> <%= guest %> </li>
-        <% } %>
-        </ol><hr>
+
  
         <h4>Team helloWorld</h4>
+      	<button onclick="location.href='admin.html'"/> View Sessions Created</button>
+              
      </body>
  </html>

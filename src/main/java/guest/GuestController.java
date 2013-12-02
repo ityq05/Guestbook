@@ -29,4 +29,9 @@ public class GuestController {
         // Prepare the result view (guest.jsp):
         return new ModelAndView("guest.jsp", "guestDao", guestDao);
     }
+    
+    @RequestMapping(value="/admin")
+    public ModelAndView viewAdmin(HttpServletRequest request) {
+    	return new ModelAndView("admin.jsp", "guestDao", guestDao);
+    }
 }
